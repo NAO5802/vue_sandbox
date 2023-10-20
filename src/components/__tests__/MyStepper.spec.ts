@@ -13,9 +13,8 @@ describe('MyStepper', () => {
   })
 
   test('ボタンをクリックするとカウントが1になること',async ()=>{
-    // TODO
-    // await wrapper.find('[data-testid=increment]').trigger('click')
-    //
-    // expect(wrapper.find('[data-testid=stepper-value]').text()).toContain('1')
+    await wrapper.find('[data-testid=increment]').trigger('click')
+
+    expect(wrapper.find('[data-testid=stepper-value]').text()).toContain('1')
   })
 })
